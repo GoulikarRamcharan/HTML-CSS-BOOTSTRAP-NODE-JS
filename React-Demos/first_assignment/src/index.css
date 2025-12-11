@@ -1,0 +1,12 @@
+/* Ensure video scales properly */
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Remove any accidental width limitation from cards */
+.card,
+.card-body {
+  width: 100% !important;
+  max-width: 100% !important;
+}

@@ -1,0 +1,33 @@
+.weather-head {
+  background-color: aqua;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  margin: 20px auto;   /* center the whole box */
+
+  width: 90%;
+  max-width: 900px;    /* so it doesn't stretch too wide */
+}
+
+.weather-head h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.weather-head p {
+  margin: 5px 0 0 0;
+  font-size: 1.2rem;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;   /* centers all cards in middle */
+  gap: 20px;
+  margin-top: 20px;
+}
