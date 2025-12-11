@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            #sid;
+            #sname;
+            constructor(sid,sname){
+                this.#sid = sid;
+                this.#sname = sname;
+            }
+            getstudetails(){
+                console.log(this.#sid + " "+ this.#sname);
+            }
+        }
+        var s1 = new student(31,"ram");
+        s1.getstudetails();
+    </script>
+</body>
+</html>

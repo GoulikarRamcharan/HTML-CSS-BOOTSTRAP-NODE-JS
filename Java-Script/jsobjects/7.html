@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average And Comp</title>
+</head>
+<body>
+    <script>
+    var aray = [10,20,30,40,50];
+      var sum = 0;
+       for(var i=0;i<aray.length;i++){
+        sum += aray[i];
+       }
+       var avg = sum/aray.length;
+         document.writeln("The average of array elements is: " + avg);
+         
+         for(var j = 0; j <aray.length; j++){
+            if(aray[j] > avg){
+                document.writeln("<br>The elements greater than average are: " + aray[j]);
+            }
+         }
+        </script>
+    </body>
+</html>

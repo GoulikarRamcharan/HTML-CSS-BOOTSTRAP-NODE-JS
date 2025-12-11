@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rectangle</title>
+</head>
+<body>
+    <script>
+        class rectangle{
+            constructor(length,breadth){
+                this.length = length;
+                this.breadth = breadth;
+            }
+            getarea(){
+                return this.length * this.breadth;
+            }
+        }
+        var arr = [new rectangle(10,20), new rectangle(30,40), new rectangle(50,60), new rectangle(70,80), new rectangle(90,100)];
+
+        for(var i = 0;i<arr.length;i++){
+            document.writeln("Area of rectangle is :"+ arr[i].getarea() + "<br>");
+        }
+    </script>
+</body>
+</html>

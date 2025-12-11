@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>names</title>
+    
+</head>
+<body>
+    <body>
+        <form style="border: 3px solid blue ;width: fit-content">
+        <h1 id="hl">Members of my Group are</h1>
+        <ol id="list">
+
+        </ol>
+        <input type="button" onclick="f1()" value="Populate List">
+        </form>
+    </body>
+    <script>
+        function f1(){
+        var names = ["ram","ravi","raju","rajesh"];
+
+        for(var i=0;i<names.length;i++){
+            document.getElementById("list").innerHTML += "<li>"+names[i]+"</li>" + "<br>";
+        }
+        }
+    </script>
+</body>
+</html>

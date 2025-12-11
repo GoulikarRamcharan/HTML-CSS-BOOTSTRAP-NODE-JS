@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script>
+        function validateuser(){
+            var username = document.getElementById("uname").value;
+            if (username == null || username == ""){
+                alert("Username can't be blank");
+                return false;
+            }
+            if (username.length < 5 || username.length > 15){
+                alert("Username must be at least 5 characters long");
+                return false;
+            }
+            return true;
+
+        }
+        function validatepwd(){
+            var password = document.getElementById("pwd").value;
+            if (password == null || password == ""){
+                alert("Password can't be blank");
+                return false;
+            }
+            if (password.length < 5 || password.length > 15){
+                alert("Password must be at least 5 characters long");
+                return false;
+            }
+            return true;
+        }
+
+        function validate(){
+            if( validateuser() && validatepwd()){
+                alert("Login Successful");
+                return true;
+            }
+            else{
+                alert("Login Failed !! Please Enter Valid Credentials");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form align="center" onsubmit=" return validate()" >
+        <fieldset>
+            <legend>Login Form</legend>
+        Enter UserName:
+        <input type="text" id="uname"><br><br>
+        Enter Password:
+        <input type="password" id="pwd"><br><br>
+        <input type="submit" name="Login">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var selected = $("#myselect option:eq(1)").text();
+            alert(selected);
+        })
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <select id="myselect">
+        <option value="1">Option-1</option>
+        <option value="2">Option-2</option>
+        <option value="3">Option-3</option>
+    </select>
+</body>
+</html>

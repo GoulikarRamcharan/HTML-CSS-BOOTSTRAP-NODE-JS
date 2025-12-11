@@ -1,0 +1,7 @@
+[
+  { "bookId": 1001, "bookName": "Core Java", "author": "Cay Horstmann", "sellingPrice": 500 },
+  { "bookId": 1002, "bookName": "Effective Java", "author": "Joshua Bloch", "sellingPrice": 550},
+  { "bookId": 1003, "bookName": "Clean Code", "author": "Robert C. Martin", "sellingPrice": 600 },
+  { "bookId": 1004, "bookName": "Java Concurrency in Practice", "author": "Brian Goetz", "sellingPrice": 650},
+  { "bookId": 1005, "bookName": "Head First Java", "author": "Kathy Sierra", "sellingPrice": 450}
+]

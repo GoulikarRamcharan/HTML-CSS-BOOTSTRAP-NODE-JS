@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print array</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        for(var i =0;i<10;i++){
+            arr[i] = prompt("Enter Name Of Person at  :" +i);
+        }
+        for(var j =0 ; j < arr.length ; j++){
+           if (arr[j].length % 2 == 0){
+               document.writeln(arr[j] + "<br>");
+           }
+        }
+    </script>
+</body>
+</html>

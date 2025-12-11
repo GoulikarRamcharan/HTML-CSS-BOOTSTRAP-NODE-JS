@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt("Enter First Number")
+        var num2 = prompt("Enter Second Number")
+        var op = prompt("Enter Operation you want to perform '+-*/'")
+        switch(op){
+                case "+" :
+                    let res = (num1 + num2);
+                    document.writeln("Sum of a & b is:"+ (res));
+                    break;
+                case "-" :
+                    document.writeln("Subtraction of a & b is:"+ (num - num1))
+                    break;
+                case "*" :
+                    document.writeln("Multiplication of a & b is:"+ (num * num1))
+                    break;
+                case "/" :
+                    document.writeln("Division of a & b is:"+ (num / num1))
+                    break;
+                default:
+                    document.writeln("Invalid Operation")
+        }
+    </script>
+    
+</body>
+</html>

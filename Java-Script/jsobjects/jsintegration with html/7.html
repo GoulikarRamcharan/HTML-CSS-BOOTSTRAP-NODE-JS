@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Table</title>
+    
+</head>
+<body>
+    <table border="1" cellspacing="10" cellpadding="10" >
+        <tr id="1">
+            <th>Student Name</th>
+            <th>Course</th>
+            <th>Grade</th>
+        </tr>
+        <tr id="2">
+            <td>Manish Patel</td>
+            <td>DAC</td>
+            <td>B</td>
+        </tr>
+        <tr id="3">
+            <td>Satvi Rao</td>
+            <td>DITISS</td>
+            <td>B</td>
+        </tr>
+        <tr id="4">
+            <td>Arnav Patil</td>
+            <td>DIOT</td>
+            <td>A</td>
+        </tr>
+        <tr id="5">
+            <td>Anita Kapoor</td>
+            <td>DAC</td>
+            <td>A</td>
+        </tr>
+    </table>
+    <script>
+        for (var i = 2;i <= 5;i++){
+            if( i % 2 == 0){
+                document.getElementById(i).style.backgroundColor = "lightblue";
+            }
+            else{
+                document.getElementById(i).style.backgroundColor = "grey";
+            }
+        }
+    </script>
+</body>
+</html>

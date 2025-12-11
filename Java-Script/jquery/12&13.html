@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Populate List</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        var arr = ["Jhon","Steve","Ben","Damon","Ian"];
+        $(document).ready(function(){
+            for(var i = 0 ; i<arr.length;i++){
+                $("#mylist").append("<li>"+ arr[i]+"</li>");
+            }
+        })
+     </script>
+</head>
+<body>
+    <form style="border: 3px solid blue; width: fit-content; ">
+    <h3>Member Of My Group Are</h3>
+    <ol id="mylist">
+    </ol>
+    </form>
+</body>
+</html>

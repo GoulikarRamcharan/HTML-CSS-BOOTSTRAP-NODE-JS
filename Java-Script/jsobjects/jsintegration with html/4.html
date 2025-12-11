@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept element</title>
+    <script>
+        function SumofDigits(){
+        var number = Number(document.getElementById("num").value);
+        if(number > 0 && number < 1000){
+            var temp = number;
+            var sum = 0 ;
+            while(number > 0){
+                var digit = number % 10;
+                sum +=digit;
+                number = Math.floor(number / 10);
+
+            }
+            document.getElementById("p1").innerHTML = "Sum Of digits of"+temp+" is : "+sum;
+        }
+        else{
+            alert("Entered Number Out Of Range  ")
+        }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter a number :
+        <input type="number" id="num">
+        <input type="button" value="calculate" onclick="SumofDigits()">
+    </form>
+    <p id="p1"></p>
+</body>
+</html>

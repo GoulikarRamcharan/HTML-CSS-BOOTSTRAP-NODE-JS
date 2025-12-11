@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Table</title>
+</head>
+<body>
+  <form style="border: 5px solid blue; padding: 10px; width: fit-content;">
+    <h1> Welcome to Java Script</h1>
+   <table border="1" cellspacing="10" cellpadding="10" ">
+    <tr id="0">
+        <th>ACCT ID</th>
+        <th>ACCT NAME</th>
+        <th>ACCT BAL</th>
+    </tr>
+    <tr>
+        <td id = 1></td>
+        <td id = 2></td>
+        <td id = 3></td>
+    </tr>
+    <tr>
+         <td id = 4></td>
+        <td id = 5></td>
+        <td id = 6></td>
+    </tr>
+    <tr>
+         <td id = 7></td>
+        <td id = 8></td>
+        <td id = 9></td>
+    </tr>
+    <tr>
+         <td id = 10></td>
+        <td id = 11></td>
+        <td id = 12></td>
+    </tr>
+    <tr>
+         <td id = 13></td>
+        <td id = 14></td>
+        <td id = 15></td>
+    </tr>
+   </table>
+   </form>
+    <script>
+    var ary = [
+        {
+         accid : 1001,
+         accname : "ram",
+         accbal : 90000
+        },
+        {
+            accid : 1002,
+            accname : "ravi",
+            accbal : 80000
+        },
+        {
+            accid : 1003,
+            accname : "raju",
+            accbal : 70000
+        },
+        {
+            accid : 1004,
+            accname : "rajesh",
+            accbal : 60000
+        }
+
+        
+   ]
+   var sum = 0;
+
+   for(var i =0;i < ary.length ;i++){
+    sum = sum + ary[i].accbal;
+   }
+
+   var CellId = 1;
+   for(var i = 0; i < ary.length;i++){
+        document.getElementById(CellId++).innerHTML = ary[i].accid;
+        document.getElementById(CellId++).innerHTML = ary[i].accname;
+        document.getElementById(CellId++).innerHTML = ary[i].accbal;
+   }
+
+   document.getElementById(14).innerHTML = "Total Balance";
+
+   document.getElementById(15).innerHTML = sum;
+   </script>
+</body>
+</html>

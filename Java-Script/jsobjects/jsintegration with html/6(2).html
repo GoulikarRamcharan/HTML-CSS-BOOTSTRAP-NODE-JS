@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Form</title>
+    <script>
+        function sendd() {
+            var name = document.getElementById("nm").value;
+            var date = document.getElementById("da").value;
+            var email = document.getElementById("el").value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Invalid Email Address");
+                return;
+            }
+            var gender = "";
+            if (document.getElementById("ml").checked) {
+                gender = "Male";
+            }
+            else {
+                gender = "Female";
+            }
+            var luck = document.getElementById("nu").value;
+            var food = [];
+            if (document.getElementById("pz").checked) {
+                food.push("Pizza");
+            }
+            if (document.getElementById("pa").checked) {
+                food.push("Pasta");
+            }
+            if (document.getElementById("pc").checked) {
+                food.push("Chinese");
+            }
+            if (luck > 100) {
+                alert("Invalid Luck Number");
+            }
+            else {
+                document.getElementById("hw").innerHTML = "You Entered ";
+                document.getElementById("p1").innerHTML = "Name : " + name + "<br>BirthDate : " + date + "<br>Email : " + email + "<br>Gender : " + gender + "<br>Luck Number : " + luck + "<br>Favourite Food : " + food.join(", ");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form style="border: 3px solid blue ;width: fit-content">
+        <h1>Enter Your Details</h1>
+        Name:
+        <input type="text" id="nm"><br><br>
+        BirthDate:
+        <input type="date" id="da"><br><br>
+        Email:
+        <input type="email" id="el"><br><br>
+        Gender:
+        <input type="radio" name="Gender" id="ml" value="male">Male
+        <input type="radio" name="Gender" id="fl" value="female">Female<br>
+        Luck Number (1-100) :
+        <input type="number" id="nu"><br><br>
+        Favourite Food:
+        <input type="checkbox" id="pz" align="center" value="Pizza">Pizza
+        <input type="checkbox" id="pa" align="center" value="Pasta">Pasta
+        <input type="checkbox" id="pc" align="center" value="Chinese">Chinese<br><br>
+
+        <input type="button" value="Send Data" onclick="sendd()"><br>
+        <h3 id="hw"></h3><br><br>
+        <p id="p1"></p>
+    </form>
+</body>
+
+</html>

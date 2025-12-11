@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find class</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $("div[class]").each(function(){
+                alert("Div Class Found" + " "+ $(this).attr("class"));
+            })
+        })
+     </script>
+</head>
+<body>
+    <div id="div1" class="div-class">div1</div>
+    <div id ="div2">div2</div>
+    <div id="div3">div3</div>
+</body>
+</html>

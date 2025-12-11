@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisrtration Form</title>
+    <script>
+        var arr =[];
+        function nxt(){
+            var usr = document.getElementById("un").value;
+            var pas = document.getElementById("pass").value;
+            var elm = document.getElementById("eml").value;
+            var obj = {
+                user: usr,
+                pass:  pas,
+                email : elm,
+            };
+
+            arr.push(obj);
+
+            var table = "";
+
+            for(var i = 0; i < arr.length ; i++){
+                table += "<tr>"+ "<td>"+ arr[i].user + "</td>"
+                         +"<td>"+arr[i].pass +"</td>"
+                         +"<td>"+ arr[i].email+"</td>"
+                         +"</tr>"
+            }
+            document.getElementById("tbl").innerHTML = table;
+            
+        }
+    </script>
+</head>
+<body>
+    <form style="border: 1px solid blue; padding: 10px; width: fit-content;">
+        <h1>Regisrtration Form</h1>
+        UserName:
+        <input type="text" id="un"><br><br>
+        Password:
+        <input type="password" id="pass"><br><br>
+        Email:
+        <input type="email" id="eml"><br><br>
+        <input type="button" value="add" onclick="nxt()">
+        <br><br><br>
+
+        <table border="1" cellspacing="10" cellpadding="10">
+            <tr >
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Email</th>
+            </tr>
+           <tbody id="tbl"></tbody>
+        </table>
+    </form>
+</body>
+</html>

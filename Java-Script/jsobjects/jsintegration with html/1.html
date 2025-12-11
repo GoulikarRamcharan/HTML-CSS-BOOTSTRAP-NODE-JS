@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Radius</title>
+    <script>
+        function calculate(){
+        var r1 = document.getElementById("radius").value;
+
+        var area = Math.PI * r1 *r1;
+
+        var circumference = 2 * Math.PI * r1;
+        document.getElementById("area").innerHTML = "Area Is:" + area;
+        document.getElementById("circumference").innerHTML = "Circumference IS:"+ circumference;
+        // document.writeln("Area : " + Math.floor(area) + "<br>");
+        // document.writeln("Circumference : " + Math.floor(circumference) + "<br>");
+        }
+        </script>
+</head>
+<body>
+    <form>
+        Enter radius: <input type="text" id="radius"><br><br>
+        <input type="button" value="calculate" onclick="calculate()">
+        <p id="area"></p>
+        <p id="circumference"></p>
+    </form>
+</body>
+</html>

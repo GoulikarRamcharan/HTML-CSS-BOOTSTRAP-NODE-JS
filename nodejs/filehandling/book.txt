@@ -1,0 +1,6 @@
+BookId | BookName | Author | sellingPrice | FinalPrice  
+1001  |  Core Java  |  Cay Horstmann  |  500  |  450
+1002  |  Effective Java  |  Joshua Bloch  |  550  |  495
+1003  |  Clean Code  |  Robert C. Martin  |  600  |  540
+1004  |  Java Concurrency in Practice  |  Brian Goetz  |  650  |  585
+1005  |  Head First Java  |  Kathy Sierra  |  450  |  405

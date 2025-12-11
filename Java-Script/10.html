@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum Of Square</title>
+</head>
+<body>
+    <script>
+        function sumofsquare(){
+            var n = prompt("Enter a number to calculate sum of squares of even numbers up to that number");
+            var sum = 0;
+            for (var i =0; i <= n;i += 2){
+                sum += i *i;
+                
+            }
+             document.writeln("The sum of square of even numbers up to " + n + " is :" + sum + "<br>");
+        }
+        sumofsquare();
+       
+    </script>
+</body>
+</html>

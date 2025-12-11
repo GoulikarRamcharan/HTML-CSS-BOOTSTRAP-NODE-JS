@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <script>
+        function mul(){
+            var s1 = Number(document.getElementById("st").value);
+            var s2 = Number(document.getElementById("wt").value);
+            var s3 = Number(document.getElementById("ml").value);
+            var i = 0 ;
+            var cal = "";
+            for(  i = s1; i <= s2 ;i++){
+                cal += i +" Times "+ s3 +" = " + i*s3 + "\n";
+            }
+            document.getElementById("dl").value = cal;
+        }
+    </script>
+</head>
+<body>
+    <form align="center">
+        Starts With :
+        <input type="number" id="st"> 
+         
+        Ends With:
+        <input type="number" id="wt">
+
+        Multiply with :
+        <input type="number" id="ml">
+        <br><br>
+        
+        <input align="center" type="button" value="Times Table" onclick="mul()">
+        <br><br>
+        <input align="center" type="reset" value="Reset"><br><br>
+
+        <textarea  id="dl" rows="11" cols="30" readonly></textarea>
+    </form>
+</body>
+</html>

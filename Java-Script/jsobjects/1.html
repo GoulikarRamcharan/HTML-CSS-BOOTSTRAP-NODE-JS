@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print date day and month</title>
+</head>
+<body>
+    <script>
+        var da = new Date();
+
+        var date = da.getDate();
+
+        var tm = da.getTime();
+
+        if(tm > 6 || tm < 12){
+           var time = "Good Morning";
+        }
+        else if(tm >= 12 || tm < 18){
+            var time = "Good Afternoon";
+        }
+        else{
+            var time = "Good Night";
+        }
+
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+        var day = days[da.getDay()];
+
+        var mon = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        var month = mon[da.getMonth()];
+
+        var yr = da.getFullYear();
+
+        document.writeln("Today Is :" + day + "," + date + " "+ month +" " + yr + " ,"+ "Welcome" + ","+ "and " + time + " to you");
+        
+    </script>
+</body>
+</html>

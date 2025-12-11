@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>names</title>
+    
+</head>
+<body>
+    <body>
+        <form style="border: 3px solid blue ;width: fit-content">
+        <h1 id="hl"></h1>
+        <p id="p1"></p>
+        </form>
+    </body>
+    <script>
+        var names = ["ram","ravi","raju","rajesh"];
+        document.getElementById("hl").innerHTML = "Members of my Group are";
+
+        for(var i=0;i<names.length;i++){
+            document.getElementById("p1").innerHTML += names[i].toUpperCase() + ",";
+        }
+    </script>
+</body>
+</html>
